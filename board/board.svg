@@ -1,0 +1,157 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="281" height="489"
+     viewBox="10.1645 5.155 35.066 61.074" font-family="sans-serif">
+
+  <!-- PCB Board -->
+  <rect x="10.1645" y="5.155" width="35.066" height="61.074" rx="0.537" fill="#0049a7"/>
+
+  <!-- Pin 1 marker (triangle at top-left corner) -->
+  <polygon points="10.8,5.6 11.5,5.6 10.8,6.3" fill="#fff"/>
+
+  <!-- Left pin pads (VIN through SC1, top to bottom) -->
+  <ellipse cx="12.578" cy="7.563" rx="1.789" ry="1.921" fill="#c09345"/>
+  <ellipse cx="12.578" cy="12.778" rx="1.789" ry="1.921" fill="#c09345"/>
+  <ellipse cx="12.578" cy="17.902" rx="1.789" ry="1.921" fill="#c09345"/>
+  <ellipse cx="12.578" cy="22.842" rx="1.789" ry="1.921" fill="#c09345"/>
+  <ellipse cx="12.578" cy="27.875" rx="1.789" ry="1.921" fill="#c09345"/>
+  <ellipse cx="12.578" cy="32.724" rx="1.789" ry="1.921" fill="#c09345"/>
+  <ellipse cx="12.578" cy="38.122" rx="1.789" ry="1.921" fill="#c09345"/>
+  <ellipse cx="12.578" cy="43.063" rx="1.789" ry="1.921" fill="#c09345"/>
+  <ellipse cx="12.578" cy="48.187" rx="1.789" ry="1.921" fill="#c09345"/>
+  <ellipse cx="12.578" cy="53.127" rx="1.789" ry="1.921" fill="#c09345"/>
+  <ellipse cx="12.578" cy="58.251" rx="1.789" ry="1.921" fill="#c09345"/>
+  <ellipse cx="12.578" cy="63.192" rx="1.789" ry="1.921" fill="#c09345"/>
+
+  <!-- Right pin pads (SC7 through SD2, top to bottom) -->
+  <ellipse cx="43.046" cy="7.380" rx="1.789" ry="1.921" fill="#c09345"/>
+  <ellipse cx="43.046" cy="12.503" rx="1.789" ry="1.921" fill="#c09345"/>
+  <ellipse cx="43.046" cy="17.444" rx="1.789" ry="1.921" fill="#c09345"/>
+  <ellipse cx="43.046" cy="22.751" rx="1.789" ry="1.921" fill="#c09345"/>
+  <ellipse cx="43.046" cy="27.875" rx="1.789" ry="1.921" fill="#c09345"/>
+  <ellipse cx="43.046" cy="32.907" rx="1.789" ry="1.921" fill="#c09345"/>
+  <ellipse cx="43.046" cy="38.031" rx="1.789" ry="1.921" fill="#c09345"/>
+  <ellipse cx="43.046" cy="42.880" rx="1.789" ry="1.921" fill="#c09345"/>
+  <ellipse cx="43.046" cy="48.187" rx="1.789" ry="1.921" fill="#c09345"/>
+  <ellipse cx="43.046" cy="53.036" rx="1.789" ry="1.921" fill="#c09345"/>
+  <ellipse cx="43.046" cy="58.342" rx="1.789" ry="1.921" fill="#c09345"/>
+  <ellipse cx="43.046" cy="63.375" rx="1.789" ry="1.921" fill="#c09345"/>
+
+  <!-- Dark hole centers - left pins -->
+  <ellipse cx="12.578" cy="7.563" rx="1.07" ry="1.15" fill="#1a1a1a"/>
+  <ellipse cx="12.578" cy="12.778" rx="1.07" ry="1.15" fill="#1a1a1a"/>
+  <ellipse cx="12.578" cy="17.902" rx="1.07" ry="1.15" fill="#1a1a1a"/>
+  <ellipse cx="12.578" cy="22.842" rx="1.07" ry="1.15" fill="#1a1a1a"/>
+  <ellipse cx="12.578" cy="27.875" rx="1.07" ry="1.15" fill="#1a1a1a"/>
+  <ellipse cx="12.578" cy="32.724" rx="1.07" ry="1.15" fill="#1a1a1a"/>
+  <ellipse cx="12.578" cy="38.122" rx="1.07" ry="1.15" fill="#1a1a1a"/>
+  <ellipse cx="12.578" cy="43.063" rx="1.07" ry="1.15" fill="#1a1a1a"/>
+  <ellipse cx="12.578" cy="48.187" rx="1.07" ry="1.15" fill="#1a1a1a"/>
+  <ellipse cx="12.578" cy="53.127" rx="1.07" ry="1.15" fill="#1a1a1a"/>
+  <ellipse cx="12.578" cy="58.251" rx="1.07" ry="1.15" fill="#1a1a1a"/>
+  <ellipse cx="12.578" cy="63.192" rx="1.07" ry="1.15" fill="#1a1a1a"/>
+
+  <!-- Dark hole centers - right pins -->
+  <ellipse cx="43.046" cy="7.380" rx="1.07" ry="1.15" fill="#1a1a1a"/>
+  <ellipse cx="43.046" cy="12.503" rx="1.07" ry="1.15" fill="#1a1a1a"/>
+  <ellipse cx="43.046" cy="17.444" rx="1.07" ry="1.15" fill="#1a1a1a"/>
+  <ellipse cx="43.046" cy="22.751" rx="1.07" ry="1.15" fill="#1a1a1a"/>
+  <ellipse cx="43.046" cy="27.875" rx="1.07" ry="1.15" fill="#1a1a1a"/>
+  <ellipse cx="43.046" cy="32.907" rx="1.07" ry="1.15" fill="#1a1a1a"/>
+  <ellipse cx="43.046" cy="38.031" rx="1.07" ry="1.15" fill="#1a1a1a"/>
+  <ellipse cx="43.046" cy="42.880" rx="1.07" ry="1.15" fill="#1a1a1a"/>
+  <ellipse cx="43.046" cy="48.187" rx="1.07" ry="1.15" fill="#1a1a1a"/>
+  <ellipse cx="43.046" cy="53.036" rx="1.07" ry="1.15" fill="#1a1a1a"/>
+  <ellipse cx="43.046" cy="58.342" rx="1.07" ry="1.15" fill="#1a1a1a"/>
+  <ellipse cx="43.046" cy="63.375" rx="1.07" ry="1.15" fill="#1a1a1a"/>
+
+  <!-- Mounting holes (white ring + gold stroke) -->
+  <ellipse cx="27.704" cy="9.941" rx="3.065" ry="3.294" fill="#fff" stroke="#c09345" stroke-width="1.2"/>
+  <ellipse cx="27.983" cy="60.630" rx="3.065" ry="3.294" fill="#fff" stroke="#c09345" stroke-width="1.2"/>
+  <!-- Dark centers for mounting holes -->
+  <ellipse cx="27.704" cy="9.941" rx="1.84" ry="1.98" fill="#1a1a1a"/>
+  <ellipse cx="27.983" cy="60.630" rx="1.84" ry="1.98" fill="#1a1a1a"/>
+
+  <!-- IC package -->
+  <rect x="23.233" y="26.063" width="8.54" height="15.657" rx="0.537" fill="#000"/>
+
+  <!-- SMD component near IC (large, right side of board center) -->
+  <g transform="matrix(0.17117,0,0,0.17117,18.834,7.963)">
+    <rect x="20.033" y="199.86" width="18.143" height="9.071" rx="0.311" fill="#c3c8d0"/>
+    <rect x="20.033" y="208.932" width="18.143" height="22.679" rx="0.778" fill="#000"/>
+    <rect x="20.033" y="231.61" width="18.143" height="9.071" rx="0.311" fill="#c3c8d0"/>
+  </g>
+
+  <!-- Two small SMDs below A2 area -->
+  <rect x="26.145" y="42.173" width="3.105" height="1.553" rx="0.053" fill="#c3c8d0"/>
+  <rect x="26.145" y="43.726" width="3.105" height="3.882" rx="0.133" fill="#000"/>
+  <rect x="26.145" y="47.607" width="3.105" height="1.553" rx="0.053" fill="#c3c8d0"/>
+
+  <rect x="30.156" y="42.173" width="3.105" height="1.553" rx="0.053" fill="#c3c8d0"/>
+  <rect x="30.156" y="43.726" width="3.105" height="3.882" rx="0.133" fill="#000"/>
+  <rect x="30.156" y="47.607" width="3.105" height="1.553" rx="0.053" fill="#c3c8d0"/>
+
+  <!-- Brown/gold component (near SCL area) -->
+  <rect x="24.268" y="18.688" width="3.105" height="1.553" rx="0.053" fill="#c3c8d0"/>
+  <rect x="24.268" y="20.241" width="3.105" height="3.882" rx="0.133" fill="#b57c06"/>
+  <rect x="24.268" y="24.122" width="3.105" height="1.553" rx="0.053" fill="#c3c8d0"/>
+
+  <!-- Three SMDs near top of board -->
+  <g transform="matrix(0.17117,0,0,0.17117,17.022,-15.522)">
+    <rect x="20.033" y="199.86" width="18.143" height="9.071" rx="0.311" fill="#c3c8d0"/>
+    <rect x="20.033" y="208.932" width="18.143" height="22.679" rx="0.778" fill="#000"/>
+    <rect x="20.033" y="231.61" width="18.143" height="9.071" rx="0.311" fill="#c3c8d0"/>
+  </g>
+  <g transform="matrix(0.17117,0,0,0.17117,24.657,-15.651)">
+    <rect x="20.033" y="199.86" width="18.143" height="9.071" rx="0.311" fill="#c3c8d0"/>
+    <rect x="20.033" y="208.932" width="18.143" height="22.679" rx="0.778" fill="#000"/>
+    <rect x="20.033" y="231.61" width="18.143" height="9.071" rx="0.311" fill="#c3c8d0"/>
+  </g>
+  <g transform="matrix(0.17117,0,0,0.17117,28.668,-15.586)">
+    <rect x="20.033" y="199.86" width="18.143" height="9.071" rx="0.311" fill="#c3c8d0"/>
+    <rect x="20.033" y="208.932" width="18.143" height="22.679" rx="0.778" fill="#000"/>
+    <rect x="20.033" y="231.61" width="18.143" height="9.071" rx="0.311" fill="#c3c8d0"/>
+  </g>
+
+  <!-- Silkscreen: Board title -->
+  <text x="18.009" y="17.544" font-size="3.743" fill="#fff">TCA9548A</text>
+
+  <!-- Silkscreen: I2C / Expander -->
+  <text xml:space="preserve" font-size="3.119" fill="#fff">
+    <tspan x="20.44" y="52.563">     I2C</tspan>
+    <tspan x="20.44" y="56.462">Expander</tspan>
+  </text>
+
+  <!-- Attribution -->
+  <text x="27.8" y="65.8" text-anchor="middle" font-size="1.6" fill="#fff" opacity="0.7">@7ax</text>
+
+  <!-- IC marking (rotated 90deg on chip body) -->
+  <text transform="rotate(90)" x="31.044" y="-29.105" font-size="2.295" fill="#b3b3b3">PW548A</text>
+
+  <!-- Left pin labels (white silkscreen) -->
+  <text x="14.759" y="8.569" font-size="2.415" fill="#fff">VIN</text>
+  <text x="14.643" y="13.676" font-size="2.415" fill="#fff">GND</text>
+  <text x="14.619" y="19.720" font-size="2.415" fill="#fff">SDA</text>
+  <text x="14.619" y="23.741" font-size="2.415" fill="#fff">SCL</text>
+  <text x="14.541" y="29.048" font-size="2.415" fill="#fff">RST</text>
+  <text x="14.759" y="33.897" font-size="2.415" fill="#fff">A0</text>
+  <text x="14.759" y="39.021" font-size="2.415" fill="#fff">A1</text>
+  <text x="14.554" y="44.236" font-size="2.415" fill="#fff">A2</text>
+  <text x="14.619" y="49.085" font-size="2.415" fill="#fff">SD0</text>
+  <text x="14.619" y="54.117" font-size="2.415" fill="#fff">SC0</text>
+  <text x="14.619" y="59.241" font-size="2.415" fill="#fff">SD1</text>
+  <text x="14.619" y="64.090" font-size="2.415" fill="#fff">SC1</text>
+
+  <!-- Right pin labels (white silkscreen) -->
+  <text x="35.501" y="8.095" font-size="2.415" fill="#fff">SC7</text>
+  <text x="35.501" y="13.859" font-size="2.415" fill="#fff">SD7</text>
+  <text x="35.501" y="19.806" font-size="2.415" fill="#fff">SC6</text>
+  <text x="35.501" y="24.107" font-size="2.415" fill="#fff">SD6</text>
+  <text x="35.501" y="29.230" font-size="2.415" fill="#fff">SC5</text>
+  <text x="35.501" y="34.080" font-size="2.415" fill="#fff">SD5</text>
+  <text x="35.501" y="39.295" font-size="2.415" fill="#fff">SC4</text>
+  <text x="35.501" y="44.327" font-size="2.415" fill="#fff">SD4</text>
+  <text x="35.501" y="49.359" font-size="2.415" fill="#fff">SC3</text>
+  <text x="35.501" y="54.117" font-size="2.415" fill="#fff">SD3</text>
+  <text x="35.501" y="59.515" font-size="2.415" fill="#fff">SC2</text>
+  <text x="35.501" y="64.639" font-size="2.415" fill="#fff">SD2</text>
+
+</svg>
