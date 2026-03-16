@@ -21,7 +21,7 @@ jobs:
           sudo mv wasi-sdk-${WASI_VERSION_FULL}-x86_64-linux /opt/wasi-sdk
 
       - name: Download wokwi-api.h
-        run: curl -sL -o src/wokwi-api.h https://raw.githubusercontent.com/wokwi/wokwi-chip-api/main/include/wokwi-api.h
+        run: curl -sL -o src/wokwi-api.h https://wokwi.com/api/chips/wokwi-api.h
 
       - name: Build
         run: make

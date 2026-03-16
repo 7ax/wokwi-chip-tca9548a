@@ -2,8 +2,6 @@
 #pragma clang diagnostic ignored "-Wunused-function"
 #include "wokwi-api.h"
 #pragma clang diagnostic pop
-#include <stdio.h>
-#include <stdlib.h>
 
 typedef struct {
   uint8_t control_reg;
@@ -14,10 +12,12 @@ typedef struct {
   i2c_dev_t i2c;
 } chip_state_t;
 
+static chip_state_t state;
+
 static bool on_i2c_connect(void *user_data, uint32_t address, bool read) {
+  (void)user_data;
   (void)address;
   (void)read;
-  (void)user_data;
   return true; /* ACK */
 }
 
@@ -45,7 +45,7 @@ static void on_rst_change(void *user_data, pin_t pin, uint32_t value) {
 }
 
 void chip_init(void) {
-  chip_state_t *chip = malloc(sizeof(chip_state_t));
+  chip_state_t *chip = &state;
   chip->control_reg = 0x00;
 
   /* Initialize pins */
@@ -100,6 +100,4 @@ void chip_init(void) {
     .user_data = chip,
   };
   pin_watch(chip->pin_rst, &rst_watch);
-
-  printf("TCA9548A initialized at address 0x%02X\n", addr);
 }
