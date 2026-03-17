@@ -30,7 +30,9 @@ jobs:
         run: make
 
       - name: Package chip.zip
-        run: cd dist && zip ../chip.zip chip.json chip.wasm
+        run: |
+          cp board/board.json board/board.svg dist/
+          cd dist && zip ../chip.zip chip.json chip.wasm board.json board.svg
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
