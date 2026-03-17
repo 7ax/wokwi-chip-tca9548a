@@ -132,6 +132,8 @@ void loop() {}
 3. **Reset has no minimum pulse width** (Low) — Real chip requires ≥6ns LOW pulse. Simulator resets on any falling edge. This is a conservative divergence (resets more readily than real hardware).
 4. **Address pins read once** (None) — Real hardware uses resistor-set pins that don't change. Reading at init is correct behavior.
 5. **Init-order assumption** (None) — `configured_addr` is zero before `chip_init` runs. Wokwi calls `chip_init` synchronously before any I2C traffic, so no I2C transaction can arrive with a stale address. If Wokwi ever changed to async init, this would need a sentinel value.
+6. **A0/A1/A2 have internal pull-down** (None) — Real hardware address pins are high-impedance, set by external resistors. Simulation uses `INPUT_PULLDOWN` so floating pins default to LOW (address 0x70). This is conservative — it prevents address randomization from floating pins but may fight weak external pull-ups.
+7. **Single-threaded callback assumption** (None) — `control_reg` is accessed from I2C and RST callbacks without synchronization. Wokwi executes all chip callbacks on a single thread. If this assumption ever changes, a mutex or atomic would be needed.
 
 ## Known Limitations
 
@@ -166,7 +168,7 @@ This chip implements the **control interface only**: writing the channel selecti
 | 17 | All 256 values (0x00–0xFF) round-trip | §7.5 Control Register |
 | 18 | Addresses 0x71–0x77 all NACK | §7.3 Address pins |
 | 19 | Zero-length write preserves register | §7.5 No sub-address |
-| 20 | Repeated START preserves register | §7.5 No sub-address |
+| 20 | endTransmission(false) preserves register | §7.5 No sub-address |
 | 21 | Rapid RST with no delays | §7.4 Reset |
 | 22 | Back-to-back write-read stress (16 patterns) | §7.5 Control Register |
 
