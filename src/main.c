@@ -100,5 +100,8 @@ void chip_init(void) {
     .pin_change = on_rst_change,
     .user_data = chip,
   };
+  /* pin_watch returns bool, but no recovery is possible in WASM if it
+     fails. Wokwi's implementation succeeds for any valid pin_init'd pin.
+     If this assumption breaks, RST monitoring fails silently. */
   pin_watch(chip->pin_rst, &rst_watch);
 }
