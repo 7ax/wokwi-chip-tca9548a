@@ -5,6 +5,7 @@
 
 typedef struct {
   uint8_t control_reg;
+  uint32_t configured_addr;
   pin_t pin_rst;
   pin_t pin_a0;
   pin_t pin_a1;
@@ -15,10 +16,9 @@ typedef struct {
 static chip_state_t state;
 
 static bool on_i2c_connect(void *user_data, uint32_t address, bool read) {
-  (void)user_data;
-  (void)address;
+  chip_state_t *chip = (chip_state_t *)user_data;
   (void)read;
-  return true; /* ACK */
+  return (address == chip->configured_addr); /* ACK only our address */
 }
 
 static uint8_t on_i2c_read(void *user_data) {
@@ -79,6 +79,7 @@ void chip_init(void) {
   uint32_t a1 = pin_read(chip->pin_a1);
   uint32_t a2 = pin_read(chip->pin_a2);
   uint32_t addr = 0x70 | (a2 << 2) | (a1 << 1) | a0;
+  chip->configured_addr = addr;
 
   /* Initialize I2C slave */
   const i2c_config_t i2c_config = {
@@ -95,7 +96,7 @@ void chip_init(void) {
 
   /* Watch RST pin for falling edge (active-low reset) */
   const pin_watch_config_t rst_watch = {
-    .edge = BOTH,
+    .edge = FALLING,
     .pin_change = on_rst_change,
     .user_data = chip,
   };
