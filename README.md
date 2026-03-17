@@ -131,6 +131,7 @@ void loop() {}
 2. **No bus isolation** (Critical) — In real hardware, deselected channels are electrically isolated. In simulation, all Wokwi I2C devices share one bus regardless of channel selection.
 3. **Reset has no minimum pulse width** (Low) — Real chip requires ≥6ns LOW pulse. Simulator resets on any falling edge. This is a conservative divergence (resets more readily than real hardware).
 4. **Address pins read once** (None) — Real hardware uses resistor-set pins that don't change. Reading at init is correct behavior.
+5. **Init-order assumption** (None) — `configured_addr` is zero before `chip_init` runs. Wokwi calls `chip_init` synchronously before any I2C traffic, so no I2C transaction can arrive with a stale address. If Wokwi ever changed to async init, this would need a sentinel value.
 
 ## Known Limitations
 
@@ -142,7 +143,7 @@ This chip implements the **control interface only**: writing the channel selecti
 
 ## Test Traceability
 
-19 tests validate all simulated behaviors against the TCA9548A datasheet.
+22 tests validate all simulated behaviors against the TCA9548A datasheet.
 
 | Test | Behavior Validated | Datasheet Reference |
 |------|--------------------|---------------------|
@@ -165,6 +166,9 @@ This chip implements the **control interface only**: writing the channel selecti
 | 17 | All 256 values (0x00–0xFF) round-trip | §7.5 Control Register |
 | 18 | Addresses 0x71–0x77 all NACK | §7.3 Address pins |
 | 19 | Zero-length write preserves register | §7.5 No sub-address |
+| 20 | Repeated START preserves register | §7.5 No sub-address |
+| 21 | Rapid RST with no delays | §7.4 Reset |
+| 22 | Back-to-back write-read stress (16 patterns) | §7.5 Control Register |
 
 ## I2C Address Configuration
 
