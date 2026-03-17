@@ -29,16 +29,17 @@ jobs:
       - name: Build
         run: make
 
+      - name: Package chip.zip
+        run: cd dist && zip ../chip.zip chip.json chip.wasm
+
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
           name: chip
-          path: dist/
+          path: chip.zip
 
       - name: Create Release
         if: startsWith(github.ref, 'refs/tags/v')
         uses: softprops/action-gh-release@v2
         with:
-          files: |
-            dist/chip.wasm
-            dist/chip.json
+          files: chip.zip
