@@ -75,9 +75,9 @@ void chip_init(void) {
   pin_init("SC7", INPUT);
 
   /* Determine I2C address from A0, A1, A2 pins */
-  uint32_t a0 = pin_read(chip->pin_a0);
-  uint32_t a1 = pin_read(chip->pin_a1);
-  uint32_t a2 = pin_read(chip->pin_a2);
+  uint32_t a0 = pin_read(chip->pin_a0) ? 1u : 0u;
+  uint32_t a1 = pin_read(chip->pin_a1) ? 1u : 0u;
+  uint32_t a2 = pin_read(chip->pin_a2) ? 1u : 0u;
   uint32_t addr = 0x70 | (a2 << 2) | (a1 << 1) | a0;
   chip->configured_addr = addr;
 
