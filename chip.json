@@ -1,6 +1,8 @@
 {
+  "version": 1,
   "name": "TCA9548A",
   "author": "7ax",
+  "docs": "https://github.com/7ax/wokwi-chip-tca9548a",
   "pins": [
     "VIN",
     "GND",

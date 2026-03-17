@@ -2,6 +2,8 @@
 
 A [Wokwi](https://wokwi.com/) custom chip simulating the [TCA9548A](https://www.ti.com/product/TCA9548A) 8-channel I2C multiplexer (Adafruit 2717 breakout form factor).
 
+![TCA9548A Board](board/board.svg)
+
 ## Features
 
 - Configurable 7-bit I2C address via A0, A1, A2 pins (0x70–0x77)
